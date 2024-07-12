@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!--BarMaidDress-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_BarMaidDress</defName>
+	<label>BarMaid Dress</label>
+	<description>A functional yet flirty outfit designed for serving drinks and keeping patrons happy.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindBarmaidDress</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<uiIconPath>Things/MousekinApparel/Preview/BarMaidDress</uiIconPath>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindBarMaidDress</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><cloth>60</cloth>
+	<leather>5</leather>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<SocialImpact>0.1</SocialImpact>
+		<CookSpeed>0.5</CookSpeed>
+		<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+
+	<!--Chef Uniform-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_ChefUniform</defName>
+	<label>Chef's Uniform</label>
+	<description>A chef's uniform shields from kitchen heat, splatters, and cuts, keeping them safe and clean.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindChefUniform</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindChefUniform</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><cloth>80</cloth>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<FoodPoisonChance>-0.1</FoodPoisonChance>
+		<CookSpeed>0.5</CookSpeed>
+		<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+
+<!--Nurse-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_MousekindNurseUniform</defName>
+	<label>Nurse's Uniform</label>
+	<description>The red cross on classic nurse uniforms historically symbolized neutrality and protected medical personnel during wartime.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindNurseUniform</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindNurseUniform</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><cloth>80</cloth>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
+		<MoveSpeed>0.1</MoveSpeed>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+<!--PioneerDress-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_MousekindPioneerDress</defName>
+	<label>Pioneer's Leather Dress</label>
+	<description>Pioneer clothing was all about practicality and durability for a tough life on the frontier.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindPioneerDress</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindPioneerDress</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><leather>40</leather>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<TrainAnimalChance>0.1</TrainAnimalChance>
+		<MoveSpeed>0.1</MoveSpeed>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+		
+<!--Overalls-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_MousekindOveralls</defName>
+	<label>Overalls</label>
+	<description>Durable one-piece garments built for comfort and utility in manual labor.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindOveralls</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindOveralls</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><cloth>80</cloth>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		
+		<MoveSpeed>0.1</MoveSpeed>
+		<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+		
+<!--ShortFringedVest-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_ShortLeatherVest</defName>
+	<label>Overalls</label>
+	<description>A rugged short jacket crafted from worn leather, adorned with fringe that dances with every move.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindShortLeatherVest</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindShortLeatherVest</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><Leather>20</Leather>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		
+		<TameAnimalChance>.01</TameAnimalChance>
+		
+		
+	</equippedStatOffsets>
+</ThingDef>
+<!--ShirtWithButtons-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_ShirtWithButtons</defName>
+	<label>Overalls</label>
+	<description>A simple, short sleeved, button shirt.</description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindShirtWithButtons</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindShirtWithButtons</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Arms</li>
+			
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><Cloth>40</Cloth>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+	
+</ThingDef>
+		
+<!--PantsWithBelt-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_PantsWithBelt</defName>
+	<label>Overalls</label>
+	<description>A worn in pair of trousers held in place by an old, leather belt. </description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindPantsWithBelt</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindPantsWithBelt</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Legs</li>
+			
+			
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><Cloth>40</Cloth><Leather>5</Leather>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+<equippedStatOffsets>
+		
+		<MoveSpeed>0.1</MoveSpeed>
+		<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+		
+		
+	</equippedStatOffsets>
+	
+</ThingDef>
+<!--Bandana-->
+<ThingDef ParentName="LisasMousekinApparelOutfits">
+	<defName>Lisas_MousekinApparel_Bandana</defName>
+	<label>Overalls</label>
+	<description>Bandanas filtered dust, shielded from sun, and offered warmth for those braving the harsh frontier. </description>
+	<graphicData>
+		<texPath>Things/MousekinApparel/Clothes/MousekindBandana</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/MousekinApparel/Clothes/MousekindBandana</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<bodyPartGroups>
+			<li>Legs</li>
+			
+			
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<costStuffCount><Cloth>20</Cloth>
+	</costStuffCount>
+	<statBases>
+		<WorkToMake>1000</WorkToMake>
+		<Mass>1</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>2</EquipDelay>
+	</statBases>
+<equippedStatOffsets>
+		
+	
+		<ToxicSensitivity>0.1</ToxicSensitivity>
+		
+		
+	</equippedStatOffsets>
+	
+</ThingDef>
+		
+		
+</Defs>
