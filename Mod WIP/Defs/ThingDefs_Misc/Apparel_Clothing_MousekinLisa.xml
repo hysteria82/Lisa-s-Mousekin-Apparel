@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Barmaid Dress -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelBarmaidDress</defName>
+		<label>Mousekin Barmaid Dress</label>
+		<description>A functional yet flirty outfit designed for serving drinks and keeping patrons happy.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinBarMaidDress/MousekinBarMaidDress</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<CookSpeed>0.5</CookSpeed>
+			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinBarMaidDress/MousekinBarMaidDress</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Female</gender>
+		</apparel>
+		<!-- Random color generator (for cloth fabric type only) -->
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<!-- Chef's Uniform -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelChefUniform</defName>
+		<label>Mousekin Chef Uniform</label>
+		<description>A chef's uniform shields from kitchen heat, splatters, and cuts, keeping them safe and clean.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinChefUniform/MousekinChefUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<FoodPoisonChance>-0.1</FoodPoisonChance>
+			<CookSpeed>0.5</CookSpeed>
+			<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinChefUniform/MousekinChefUniform</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Nurse's Uniform -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelNurseUniform</defName>
+		<label>Mousekin Nurse's Uniform</label>
+		<description>The red cross on classic nurse uniforms historically symbolized neutrality and protected medical personnel during wartime.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinNurseUniform/MousekinNurseUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinNurseUniform/MousekinNurseUniform</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Female</gender>
+		</apparel>
+		<!-- Color options (for cloth fabric type only) -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<!-- "White" - basically, use original texture colors only if the stuff fabric is cloth -->
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<!-- Pioneer's Leather Dress -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelPioneerDress</defName>
+		<label>Mousekin Pioneer's Leather Dress</label>
+		<description>Pioneer clothing was all about practicality and durability for a tough life on the frontier.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinPioneerDress/MousekinPioneerDress</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TrainAnimalChance>0.1</TrainAnimalChance>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinPioneerDress/MousekinPioneerDress</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Female</gender>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Overalls -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelOveralls</defName>
+		<label>Mousekin Overalls</label>
+		<description>Durable one-piece garment built for comfort and utility in manual labor.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinOveralls/MousekinOveralls</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.0</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinOveralls/MousekinOveralls</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Male</gender>
+		</apparel>
+	</ThingDef>
+
+	<!-- Short Leather Vest -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelShortLeatherVest</defName>
+		<label>Mousekin Short Leather Vest</label>
+		<description>A rugged short jacket crafted from worn leather, adorned with fringe that dances with every move.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinShortLeatherVest/MousekinShortLeatherVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.01</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinShortLeatherVest/MousekinShortLeatherVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Fringed Leather Vest -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelFringedLeatherVest</defName>
+		<label>Mousekin Fringed Leather Vest</label>
+		<description>A rugged jacket crafted from worn leather, adorned with fringe that dances with every move.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinLeatherVest/MousekinLeatherVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.01</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinLeatherVest/MousekinLeatherVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Shirt with buttons -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelShirtWithButtons</defName>
+		<label>Mousekin Shirt with Buttons</label>
+		<description>A simple, short sleeved, button shirt.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinShirtWithButtons/MousekinShirtWithButtons</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- Ignores CutoutComplex setting from parent LisaMousekin_ApparelBase and Mousekin_ApparelMakeableBase, as the whole shirt should have its color changed (no need for mask graphics) -->
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- none yet -->
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinShirtWithButtons/MousekinShirtWithButtons</wornGraphicPath>
+			<!-- Whole shirt should have its color changed (no need for mask graphics) -->
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Random color generator (for cloth fabric type only) -->
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<!-- Pants with belt -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelPantsWithBelt</defName>
+		<label>Mousekin Pants with Belt</label>
+		<description>A worn in pair of trousers held in place by an old, leather belt.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinPantsWithBelt/MousekinPantsWithBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+			<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinPantsWithBelt/MousekinPantsWithBelt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Random color generator (for cloth fabric type only) -->
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+	
+	<!-- Bandana -->
+	<ThingDef ParentName="LisaMousekin_ApparelBase">
+		<defName>LisaMousekin_ApparelBandana</defName>
+		<label>Mousekin Bandana</label>
+		<description>Bandanas filter dust, shield wearers from the sun, and offers warm for those braving the harsh frontier.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinCowboyBandana/MousekinCowboyBandana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- Ignores CutoutComplex setting from parent LisaMousekin_ApparelBase and Mousekin_ApparelMakeableBase, as the whole bandana should have its color changed (no need for mask graphics) -->
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinCowboyBandana/MousekinCowboyBandana</wornGraphicPath>
+			<!-- Whole bandana should have its color changed (no need for mask graphics) -->
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<drawData>
+				<defaultData>
+					<!-- Hacky way to make the bandana draw on top of vests, which are otherwise also on the Middle layer -->
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Random color generator (for cloth fabric type only) -->
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

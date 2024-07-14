@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Nurse's cap -->
+	<ThingDef ParentName="LisaMousekin_HatBase">
+		<defName>LisaMousekin_ApparelNurseHat</defName>
+		<label>Mousekin Nurse's Cap</label>
+		<description>A traditional part of a female nurse's uniform, originally intended to keep hair neat and present a modest appearance.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinNurseHat/MousekinNurseHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinNurseHat/MousekinNurseHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Female</gender>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Chef's Toque -->
+	<ThingDef ParentName="LisaMousekin_HatBase">
+		<defName>LisaMousekin_ApparelChefHat</defName>
+		<label>Mousekin Chef's Toque</label>
+		<description>Toques prevent hair and sweat from contaminating food. White is the preferred color because it's easy to see if it's dirty.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinChefHat/MousekinChefHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.5</CookSpeed>
+			<FoodPoisonChance>-0.1</FoodPoisonChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinChefHat/MousekinChefHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Custom Mousekin Race mod comp to ignore apparel stuff color -->
+		<comps>
+			<li>
+				<compClass>MousekinRace.CompApparelIgnoreStuffColor</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- 10-Gallon (Cowboy) Hat -->
+	<ThingDef ParentName="LisaMousekin_HatBase">
+		<defName>LisaMousekin_ApparelCowboyHat</defName>
+		<label>Mousekin 10-Gallon Hat</label>
+		<description>The wide brim and high crown of the hat protects the face and head from the sun, rain, and wind.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MousekinCowboyHat/MousekinCowboyHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- Ignores CutoutComplex setting from parent LisaMousekin_HatBase and Mousekin_HatMakeableBase, as the whole hat should have its color changed by stuff color (no need for mask graphics) -->
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories Inherit="false">
+			<!-- Inherit="false" ignores what the parent LisaMousekin_ApparelBase says for stuffCategories -->
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TrainAnimalChance>0.1</TrainAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MousekinCowboyHat/MousekinCowboyHat</wornGraphicPath>
+			<!-- Whole hat should have leather stuff color (no need for mask graphics) -->
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+</Defs>
