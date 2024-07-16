@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mousekin Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Restrict mod apparel to only wearable by Mousekins -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Mousekin"]/alienRace/raceRestriction/apparelList</xpath>
+					<value>
+						<!-- Body apparel -->
+						<li>LisaMousekin_ApparelBarmaidDress</li>
+						<li>LisaMousekin_ApparelChefUniform</li>
+						<li>LisaMousekin_ApparelNurseUniform</li>
+						<li>LisaMousekin_ApparelPioneerDress</li>
+						<li>LisaMousekin_ApparelOveralls</li>
+						<li>LisaMousekin_ApparelShortLeatherVest</li>
+						<li>LisaMousekin_ApparelFringedLeatherVest</li>
+						<li>LisaMousekin_ApparelShirtWithButtons</li>
+						<li>LisaMousekin_ApparelPantsWithBelt</li>
+						<li>LisaMousekin_ApparelBandana</li>
+						<!-- Headgear -->
+						<li>LisaMousekin_ApparelNurseHat</li>
+						<li>LisaMousekin_ApparelChefHat</li>
+						<li>LisaMousekin_ApparelCowboyHat</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
